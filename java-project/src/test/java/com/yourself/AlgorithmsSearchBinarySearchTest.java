@@ -11,25 +11,25 @@ import org.junit.runners.JUnit4;
 public class AlgorithmsSearchBinarySearchTest {
 
     @Test
-    public void testSearchNotFound() {
+    private static void testSearchNotFound() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
         Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 1));
     }
 
     @Test
-    public void testSearchFound() {
+    private static void testSearchFound() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
         Assert.assertEquals(3, AlgorithmsSearchBinarySearch.Search(items, 7));
     }
 
     @Test
-    public void testSearchNotFoundLargeArray() {
+    private static void testSearchNotFoundLargeArray() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
         Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 19));
     }
 
     @Test
-    public void testSearchPerformance() {
+    private static void testSearchPerformance() {
         int[] items = new int[10000000];
         for (int i = 0; i < items.length; i++) {
             items[i] = i;
