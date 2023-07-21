@@ -22,11 +22,19 @@ public class AlgorithmsSearchBinarySearchTest {
             Assert.assertEquals("Search for 1", -1, AlgorithmsSearchBinarySearch.Search(sortedArray, 1));
             Assert.assertEquals("Search for 9", -1, AlgorithmsSearchBinarySearch.Search(sortedArray, 9));
             Assert.assertEquals("Search for 19", -1, AlgorithmsSearchBinarySearch.Search(sortedArray, 19));
-
+            success(true);
         } catch (AssertionError ae) {
             Assert.fail("Oops! 🐞 " + ae.getMessage() + "\nHint 💡 Did you properly accumulate all stars into 'totalStars'? 🤔");
         }
     }
+
+    private static void msg(String channel, String msg) {
+		System.out.println(String.format("TECHIO> message --channel \"%s\" \"%s\"", channel, msg));
+	}
+
+	private static void success(boolean success) {
+		System.out.println(String.format("TECHIO> success %s", success));
+	}
 
     // check if a string exists in a text file
     private static boolean existsInFile(String str, File file) throws FileNotFoundException {
