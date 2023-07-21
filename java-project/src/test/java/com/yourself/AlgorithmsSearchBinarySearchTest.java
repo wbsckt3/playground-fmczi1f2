@@ -12,18 +12,8 @@ public class AlgorithmsSearchBinarySearchTest {
     @Test
     private void test() throws FileNotFoundException {
         try {
-            int[] items = { 2, 3, 5, 7, 11, 13, 17 };
             Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 1));
             success(true);
-
-		if (existsInFile("Arrays.stream(arr).sum()", new File("./src/main/java/com/yourself/AlgorithmsSearchBinarySearch.java"))) {
-				msg("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
-			} else {
-				msg("Kudos 🌟", "Did you know that since Java8 is out you can use streams? Try it!");
-				msg("Kudos 🌟", "");
-				msg("Kudos 🌟", "int[] galaxies = {37, 3, 2};");
-				msg("Kudos 🌟", "int totalStars = Arrays.stream(galaxies).sum(); // 42");
-			}
 		
         } catch (AssertionError ae) {
 		success(false);
