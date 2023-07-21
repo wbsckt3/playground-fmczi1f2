@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class AlgorithmsSearchBinarySearch {
 // }
     //works when the array is sorted
-    int Search(int[] arr, int x){
+    public static int Search(int[] arr, int x){
         int i = 0;
         int j = arr.length;
         while (i != j){
