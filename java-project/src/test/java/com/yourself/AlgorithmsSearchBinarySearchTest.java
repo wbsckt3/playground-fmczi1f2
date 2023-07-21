@@ -9,19 +9,19 @@ public class AlgorithmsSearchBinarySearchTest {
     @Test
     public void testSearchNotFound() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
-        Assert.assertEquals(-1, Search(items, 1));
+        Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 1));
     }
 
     @Test
     public void testSearchFound() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
-        Assert.assertEquals(3, Search(items, 7));
+        Assert.assertEquals(3, AlgorithmsSearchBinarySearch.Search(items, 7));
     }
 
     @Test
     public void testSearchNotFoundLargeArray() {
         int[] items = { 2, 3, 5, 7, 11, 13, 17 };
-        Assert.assertEquals(-1, Search(items, 19));
+        Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 19));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class AlgorithmsSearchBinarySearchTest {
 
         Date start = new Date();
         for (int i = 0; i < count; i++)
-            Search(items, 7777777);
+            AlgorithmsSearchBinarySearch.Search(items, 7777777);
 
         long milliseconds = (new Date()).getTime() - start.getTime();
         System.out.println(milliseconds);
