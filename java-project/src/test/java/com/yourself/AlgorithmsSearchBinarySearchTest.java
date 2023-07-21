@@ -7,9 +7,15 @@ import java.util.Date;
 public class AlgorithmsSearchBinarySearchTest {
 
     @Test
-    private static void testSearchNotFound() {
-        int[] items = { 2, 3, 5, 7, 11, 13, 17 };
-        Assert.assertEquals(-1, Search(items, 1));
+    private void test() throws FileNotFoundException {
+        try {
+            int[] items = { 2, 3, 5, 7, 11, 13, 17 };
+            Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 1));
+        } catch (AssertionError ae) {
+			success(false);
+			msg("Oops! 🐞", ae.getMessage());
+			msg("Hint 💡", "Did you properly accumulate all stars into 'totalStars'? 🤔");
+		}  
     }
 
 
