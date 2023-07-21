@@ -14,6 +14,8 @@ public class AlgorithmsSearchBinarySearchTest {
         try {
             int[] items = { 2, 3, 5, 7, 11, 13, 17 };
             Assert.assertEquals(-1, AlgorithmsSearchBinarySearch.Search(items, 1));
+            success(true);
+		
         } catch (AssertionError ae) {
 			success(false);
 			msg("Oops! 🐞", ae.getMessage());
