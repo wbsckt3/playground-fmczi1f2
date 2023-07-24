@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class AlgorithmsSearchBinarySearch {
 // }
-    //works when the array is sorted
+    // Funciona con un array ordenado de menor a mayor
     public static int Search(int[] arr, int x){
         int i = 0;
         int j = arr.length;
         while (i != j){
-            int m = (i + j)/2;
+            int m = ?; // como calculas el punto medio del array?
             if (x == arr[m]) return m;
             if (x < arr[m]) 
                 j = m;
