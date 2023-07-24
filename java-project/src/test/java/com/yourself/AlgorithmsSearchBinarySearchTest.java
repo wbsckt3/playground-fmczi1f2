@@ -25,6 +25,12 @@ public class AlgorithmsSearchBinarySearchTest {
         	Assert.assertEquals("Search for 19", -1, AlgorithmsSearchBinarySearch.Search(sortedArray, 19));
   
             	success(true);
+
+		if (existsInFile("(i + j)/2 ", new File("./src/main/java/com/yourself/AlgorithmsSearchBinarySearch.java"))) {
+		   msg("Perfecto! 🙏", "Así se encuentra el punto medio en un array!");
+		} else {
+		   msg("Tip 🌟", "Asigna a m el cálculo del punto medio del array así: (i + j)/2");
+		}
 		
         } catch (AssertionError ae) {
 		success(false);
