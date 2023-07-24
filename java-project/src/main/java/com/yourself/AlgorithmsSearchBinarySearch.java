@@ -10,7 +10,7 @@ public class AlgorithmsSearchBinarySearch {
         int i = 0;
         int j = arr.length;
         while (i != j){
-            int m = ?; // como calculas el punto medio del array?
+            int m = i; // corrige esta variable para calcular el punto medio del array?
             if (x == arr[m]) return m;
             if (x < arr[m]) 
                 j = m;
