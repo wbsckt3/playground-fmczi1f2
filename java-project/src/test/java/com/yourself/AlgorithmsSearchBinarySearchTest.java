@@ -29,7 +29,7 @@ public class AlgorithmsSearchBinarySearchTest {
         } catch (AssertionError ae) {
 		success(false);
 		msg("Oops! 🐞", ae.getMessage());
-		msg("Hint 💡", "Did you properly accumulate all stars into 'totalStars'? 🤔");
+		msg("Tip 💡", "Asigna a m el cálculo del punto medio del array (i + j)/2 ");
 	}  
     }
 
